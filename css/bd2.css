@@ -1,0 +1,23 @@
+/*.first
+{
+    display: inline-block;
+    position: fixed;
+    
+}*/
+
+ul{
+    height: auto;
+    width: 500px;
+    display: inline-block;
+}
+
+.sub_drop {
+    background-color: ghostwhite;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid black;
+}

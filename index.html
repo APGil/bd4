@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bd.css">
+    <link rel="stylesheet" type="text/css" href="css/bd2.css">
+</head>
+<body>
+
+    <div id="surv">
+        <h2>SABER (conocimientos)</h2>
+        <br>
+        <ul>
+        <h3 class="first">Opciones prioritarias</h3> 
+            <li>
+                <select id="drop1" class="drop">
+                <option value="none">----------</option>
+                <option value="musica" onclick="valor()">Música</option>
+                <option value="lit" onclick="valor()">Literatura</option>
+                <option value="cine" onclick="valor()">Cinema</option>
+                </select>
+            </li>
+        <br>
+        <br>
+        <br>
+            <li>    
+                <select id="drop2" class="drop">
+            <option value="none2">----------</option>
+            <option value="musica2" onclick="valor()">Música</option>
+            <option value="lit2" onclick="valor()">Literatura</option>
+            <option value="cine2" onclick="valor()">Cinema</option>
+        </select>
+            </li>
+        <br>
+        <br>
+        <br>
+            <li>    
+                <select id="drop3" class="drop">
+            <option value="none3">----------</option>
+            <option value="musica3" onclick="valor()">Música</option>
+            <option value="lit3" onclick="valor()">Literatura</option>
+            <option value="cine3" onclick="valor()">Cinema</option>
+        </select>
+            </li>
+        <br>
+        <br>
+        <br>
+        </ul>
+        
+        <ul>
+            <h3>Opciones no prioritarias</h3>
+            <li>
+                <select id="drop1_1" class="sub_drop">
+                    <option value="none">----------</option>
+                    <option value="phil" onclick="valor()">Filosofía</option>
+                    <option value="pol" onclick="valor()">Política</option>
+                    <option value="tea" onclick="valor()">Teatro</option>
+                </select>
+            </li>
+        </ul>
+        <input type="submit" value="Enviar" onclick="bubbles()">
+    </div>
+    
+    <div id="surv2">
+        <h2>SABER HACER (Habilidades)</h2>
+
+        <select id="drop11" class="drop">
+            <option value="none11">----------</option>
+            <option value="dir1" onclick="valor()">Dirección</option>
+            <option value="dg1" onclick="valor()">Diseño<br>Gráfico</option>
+            <option value="tip1" onclick="valor()">Tipografía</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <select id="drop22" class="drop">
+            <option value="none22">----------</option>
+            <option value="dir2" onclick="valor()">Dirección</option>
+            <option value="dg2" onclick="valor()">Diseño<br>Gráfico</option>
+            <option value="tip2" onclick="valor()">Tipografía</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <select id="drop33" class="drop">
+            <option value="none33">----------</option>
+            <option value="dir3" onclick="valor()">Dirección</option>
+            <option value="dg3" onclick="valor()">Diseño<br>Gráfico</option>
+            <option value="tip3" onclick="valor()">Tipografía</option>
+        </select>
+        
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Enviar" onclick="bubbles()">
+    </div>
+    
+    <div id="surv3">
+        <h2>SABER SER/ESTAR (Interpersonales)</h2>
+        
+        
+        <select id="drop111" class="drop">
+            <option value="none111">----------</option>
+            <option value="edu1" onclick="valor()">Educar</option>
+            <option value="inv1" onclick="valor()">Investigar</option>
+            <option value="cue1" onclick="valor()">Cuestionar</option>
+        </select>
+        
+        <h3>Opciones no prioritarias</h3>
+        
+        <br>
+        <br>
+        <br>
+        <select id="drop222" class="drop">
+            <option value="none222">----------</option>
+            <option value="edu2" onclick="valor()">Educar</option>
+            <option value="inv2" onclick="valor()">Investigar</option>
+            <option value="cue2" onclick="valor()">Cuestionar</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <select id="drop333" class="drop">
+            <option value="none333">----------</option>
+            <option value="edu3" onclick="valor()">Educar</option>
+            <option value="inv3" onclick="valor()">Investigar</option>
+            <option value="cue3" onclick="valor()">Cuestionar</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Enviar" onclick="bubbles()">
+    </div>
+
+    <div id="graph" class="no_graph">
+        <div id="sab1">
+            <div id="sab1txt">SABER <br> (conocimientos)</div>
+            <!---funciona amb el drop down 1--->
+            <div id="op1_1" class="bb1_1" >
+                <div id="optxt1_1">Música</div>
+            </div>
+            <div id="op2_1" class="bb2_1">
+                <div id="optxt2_1">Literatura</div>
+            </div>
+            <div id="op3_1" class="bb3_1">
+                <div id="optxt3_1">Cinema</div>
+            </div>
+            
+            <!--- Opcions no prioritàries -->
+            
+            <div id="suboptxt1_1">Filosofía</div>
+            <div id="suboptxt2_1">Política</div>
+            <div id="suboptxt3_1">Teatro</div>
+            
+            <!---funciona amb el drop down 2--->
+            <div id="op11_1" class="bb11_1" >
+                <div id="optxt11_1">Música</div>
+            </div>
+            <div id="op22_1" class="bb22_1">
+                <div id="optxt22_1">Literatura</div>
+            </div>
+            <div id="op33_1" class="bb33_1">
+                <div id="optxt33_1">Cinema</div>
+            </div>
+            
+            <!---funciona amb el drop down 3--->
+            <div id="op111_1" class="bb111_1" >
+                <div id="optxt111_1">Música</div>
+            </div>
+            <div id="op222_1" class="bb222_1">
+                <div id="optxt222_1">Literatura</div>
+            </div>
+            <div id="op333_1" class="bb333_1">
+                <div id="optxt333_1">Cinema</div>
+            </div>
+        </div>
+        
+        
+        
+        <div id="sab2">
+            <div id="sab2txt">SABER HACER <br> (Habilidades)</div>
+            <!---funciona amb el drop down 11--->
+            <div id="op1_2" class="bb1_2" >
+                <div id="optxt1_2">Dirección</div>
+            </div>
+            <div id="op2_2" class="bb2_2">
+                <div id="optxt2_2">Diseño<br>Gráfico</div>
+            </div>
+            <div id="op3_2" class="bb3_2">
+                <div id="optxt3_2">Tipografía</div>
+            </div>
+            
+            <!---funciona amb el drop down 22--->
+            <div id="op11_2" class="bb11_2" >
+                <div id="optxt11_2">Dirección</div>
+            </div>
+            <div id="op22_2" class="bb22_2">
+                <div id="optxt22_2">Diseño<br>Gráfico</div>
+            </div>
+            <div id="op33_2" class="bb33_2">
+                <div id="optxt33_2">Tipografía</div>
+            </div>
+            
+            <!---funciona amb el drop down 33--->
+            <div id="op111_2" class="bb111_2" >
+                <div id="optxt111_2">Dirección</div>
+            </div>
+            <div id="op222_2" class="bb222_2">
+                <div id="optxt222_2">Diseño<br>Gráfico</div>
+            </div>
+            <div id="op333_2" class="bb333_2">
+                <div id="optxt333_2">Tipografía</div>
+            </div>
+        </div>
+        
+        <div id="sab3">
+            <div id="sab3txt">SABER SER/ESTAR <br> (Interpersonales)</div>
+            <!---funciona amb el drop down 11--->
+            <div id="op1_3" class="bb1_3" >
+                <div id="optxt1_3">Educar</div>
+            </div>
+            <div id="op2_3" class="bb2_3">
+                <div id="optxt2_3">Investigar</div>
+            </div>
+            <div id="op3_3" class="bb3_3">
+                <div id="optxt3_3">Cuestionar</div>
+            </div>
+            
+            <!---funciona amb el drop down 22--->
+            <div id="op11_3" class="bb11_3" >
+                <div id="optxt11_3">Educar</div>
+            </div>
+            <div id="op22_3" class="bb22_3">
+                <div id="optxt22_3">Investigar</div>
+            </div>
+            <div id="op33_3" class="bb33_3">
+                <div id="optxt33_3">Cuestionar</div>
+            </div>
+            
+            <!---funciona amb el drop down 33--->
+            <div id="op111_3" class="bb111_3" >
+                <div id="optxt111_3">Educar</div>
+            </div>
+            <div id="op222_3" class="bb222_3">
+                <div id="optxt222_3">Investigar</div>
+            </div>
+            <div id="op333_3" class="bb333_3">
+                <div id="optxt333_3">Cuestionar</div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+<script type="application/javascript" src="js/bd.js"></script>
+
+</body>
+</html>
